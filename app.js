@@ -16,8 +16,8 @@
 // const { request } = require('express');
 
 // const config = {
-//   user: 'johan',
-//   password: 'Jg7@azure',
+//   user: 'sjds**,
+//   password: '*****',
 //   server: 'goodreadslibrary.database.windows.net', // You can use 'localhost\\instance' to connect to named instance
 //   database: 'GoodReadsLibrary',
 //   options: {

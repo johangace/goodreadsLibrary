@@ -4,8 +4,7 @@ npm i mssql
 npm i morgan 
 npm i body-parser
 npm i passport    cookie-parser         express-session             //deals with user in session
-
-
+npm install axios xml2js
 
 
 ******SQL Server database  - Azure   ****
