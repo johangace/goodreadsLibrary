@@ -1,0 +1,47 @@
+npm i debug --> node debug 
+npm i chalk -->  color your command line\\\
+npm i mssql
+npm i morgan 
+npm i body-parser
+npm i passport    cookie-parser         express-session             //deals with user in session
+
+
+
+
+******SQL Server database  - Azure   ****
+
+const sql = require('mssql');
+---
+sql.connect(config).catch((err) => {
+  debug(err);
+});
+---
+const request = new sql.Request();
+
+      //result.recordset
+      const { recordset } = await request......
+
+---------
+---Insert 
+Insert into books( id, title, author) VALUES
+(1,  'War and Peace', 'Lev Nikolayevich Tolstoy'),
+---Alter
+Alter Table books 
+add id int;
+
+---select
+select * from nbooks
+
+
+---- middleware -> function that is 
+
+
+
+********* MONGODB
+
+
+Command line
+- MONGO
+ -  show dbs 
+ - use library x
+ -db.books.find().pretty
