@@ -89,9 +89,11 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-
+const dotenv = require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3000;
+
+console.log('sfbsjhsfj' + process.env.REACT_APP_GOOGLE_API_KEY);
 
 app.use(morgan('tiny'));
 app.use(bodyParser.json());

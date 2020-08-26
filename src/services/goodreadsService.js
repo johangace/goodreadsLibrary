@@ -1,7 +1,7 @@
 const axios = require('axios');
 const xml2js = require('xml2js');
 const debug = require('debug')('app:goodreadsService');
-
+const dotenv = require('dotenv').config();
 const parser = xml2js.Parser({ explicitArray: false });
 
 function goodreadsService() {
@@ -9,7 +9,7 @@ function goodreadsService() {
     return new Promise((resolve, reject) => {
       axios
         .get(
-          `https://www.goodreads.com/book/show/${id}.xml?key=r5oV4OPffoSbhrmou9GEGA`
+          `https://www.goodreads.com/book/show/${id}.xml?key=${process.env.GOODREADS_APP_API_KEY}`
         )
         .then((response) => {
           parser.parseString(response.data, (err, result) => {
